@@ -21,7 +21,7 @@
 				Quantity: <strong>{cartProduct.quantity}</strong>
 			</div>
 		{/if}
-		<div class="card-body px-4">Price: {product.price}</div>
+		<div class="card-body px-4">Price: ${product.price}</div>
 		<footer class="card-footer">
 			<button
 				class="p-2 rounder variant-glass-primary rounded"
