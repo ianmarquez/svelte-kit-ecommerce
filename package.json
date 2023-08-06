@@ -37,6 +37,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"stripe": "^12.17.0"
+		"stripe": "^12.17.0",
+		"svelte-dnd-action": "^0.9.24"
 	}
 }

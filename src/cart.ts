@@ -31,13 +31,12 @@ export const removeFromCart = (id: CartItem['id']) => {
 		items.splice(itemPos, 1);
 	}
 
-	cartItems.update(() => {
-		let updatedItems = items.map((item) => {
+	cartItems.update(() =>
+		items.map((item) => {
 			if (item.id === id) {
 				return { ...item, quantity: item.quantity - 1 };
 			}
 			return item;
-		});
-		return updatedItems;
-	});
+		})
+	);
 };
