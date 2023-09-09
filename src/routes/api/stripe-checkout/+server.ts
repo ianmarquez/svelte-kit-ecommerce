@@ -4,7 +4,8 @@ import Stripe from 'stripe';
 
 const SECRET_STRIPE_KEY = STRIPE_SECRET_KEY || '';
 const stripe = new Stripe(SECRET_STRIPE_KEY, {
-	apiVersion: '2022-11-15'
+	apiVersion: '2022-11-15',
+	typescript: true
 });
 
 export const POST: RequestHandler = async ({ request }) => {
